@@ -1,9 +1,11 @@
-import "./App.css";
+import Header from "./components/Header";
+import "./styles/App.css";
 
 function App() {
   return (
     <>
-      <h1>ForDevs</h1>
+    <Header />
+    <h1 className="">Bem-vindo ao ForDevs</h1>
     </>
   );
 }

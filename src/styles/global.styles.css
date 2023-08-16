@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-zinc-950 text-zinc-50;
+}
+.outlinedCardButton {
+    @apply hover:bg-zinc-800 border border-zinc-700 rounded-md text-sm px-1 text-zinc-50;
+}
