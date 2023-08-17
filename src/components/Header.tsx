@@ -3,13 +3,13 @@ export default function Header() {
   return (
     <header>
       <nav className="p-4 bg-zinc-950 w-full min-h-fit border-b border-zinc-900 flex items-center">
-        <div>
-          <div className="flex flex-row">
+        <div className="w-full">
+          <div className="flex justify-between w-full items-center">
             <div>
-              <p className="text-zinc-200/80 hover:text-violet-200">ForDevs</p>
+              <p className="text-zinc-300">ForDevs</p>
             </div>
             <div>
-
+              <button className="px-3 bg-violet-500 text-sm text-violet-50 rounded-md">Iniciar jornada</button>
             </div>
           </div>
           <div className="flex gap-1">
