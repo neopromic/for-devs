@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-950 text-zinc-50;
+    @apply h-screen;
 }
 .outlinedCardButton {
     @apply hover:bg-zinc-800 border border-zinc-700 rounded-md text-sm px-1 text-zinc-50;
