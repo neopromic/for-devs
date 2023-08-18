@@ -26,6 +26,7 @@ export default function Post(props: PostProps) {
             name={props.username}
             avatarProps={{
               src: "https://github.com/neopromic.png",
+              size: "sm"
             }}
           />
         </div>
