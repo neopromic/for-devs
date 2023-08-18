@@ -1,24 +1,29 @@
-import "../styles/global.styles.css"
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button
+} from "@nextui-org/react";
+import "../styles/global.styles.css";
 export default function Header() {
-
   return (
-    <header>
-      <nav className="p-4 w-full min-h-fit border-b border-zinc-900 shadow-md flex items-center">
-        <div className="w-full">
-          <div className="flex justify-between w-full items-center">
-            <div>
-              <p className="text-zinc-300">ForDevs</p>
-            </div>
-            <div>
-              
-            </div>
-          </div>
-          <div className="flex gap-1">
-            <button className="outlinedCardButton">Relevantes</button>
-            <button className="outlinedCardButton">Recentes</button>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <Navbar>
+      <NavbarBrand>
+        <p className="font-bold text-inherit">ForDevs</p>
+      </NavbarBrand>
+
+      <NavbarContent justify="end">
+        <NavbarItem className=" lg:flex">
+          <Link href="#">Login</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button as={Link} color="primary" href="#" variant="flat">
+            Sign Up
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+    </Navbar>
   );
 }
