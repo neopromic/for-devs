@@ -25,9 +25,10 @@ export default function Post(props: PostProps) {
           <User
             name={props.username}
             avatarProps={{
-              src: "https://github.com/neopromic.png",
+              name: "neopromic",
+              size: "sm"
             }}
-            className="w-6 h-6"
+            
           />
         </div>
       </section>
