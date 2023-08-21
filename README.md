@@ -33,7 +33,7 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
 
 Para contribuir, primeiro clone esse repositório em sua máquina.
 ```sh
-git clone https://github.com/neopromic/for-devs
+git clone https://github.com/neopromic/for-devs.git
 ```
 Navegue até a pasta e rode esse comando para instalar todas as dependências do projeto:
 ```sh
