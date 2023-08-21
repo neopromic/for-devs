@@ -26,7 +26,8 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
   - [ ]  Criar o perfil de usuário
   - [ ]  Criar a visualização dos posts
   - [ ]  Criar o editor para os posts (para criar os posts, necessitamos de um editor de texto)
-
+- [x] Criar a página de login
+- [ ] Criar a página de registro
   ___
 
 #### Contribuindo para o forDevs 🚀
