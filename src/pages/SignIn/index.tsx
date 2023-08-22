@@ -6,13 +6,13 @@ export default function SignIn() {
       <form>
         <div className="form-header">
           <img
-            src="/public/assets/logo.png"
+            src="/assets/logo.png"
             className="w-8 h-8 object-cover rounded-full"
           />
           <h1>Bem-vindo de volta</h1>
         </div>
         <div className="mb-4">
-          <label htmlFor="username">Nome de úsuario</label>
+          <label htmlFor="username">Nome de usuário</label>
           <input type="text" id="username" />
         </div>
         <div className="mb-6">

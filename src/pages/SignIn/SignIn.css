@@ -3,9 +3,9 @@ section {
 }
 form {
   @apply bg-zinc-900 p-8 backdrop-filter bg-opacity-60 backdrop-blur-lg rounded-lg shadow-md border border-zinc-800;
-  & h1 {
-    @apply font-extrabold text-xl;
-  }
+}
+h1 {
+ @apply font-extrabold text-xl;
 }
 .form-header {
   @apply flex flex-col items-center mb-8;
@@ -14,5 +14,5 @@ label {
   @apply block font-medium text-zinc-300;
 }
 input {
-  @apply w-full bg-zinc-800 mt-1 p-2 border border-zinc-700 rounded-md focus:ring-violet-500 focus:border-violet-500;
+  @apply w-full bg-zinc-800 mt-1 p-2 outline-none border-none rounded-md;
 }

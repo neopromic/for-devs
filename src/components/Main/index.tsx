@@ -1,6 +1,4 @@
 import Button from "../Button";
-import PostCard from "../PostCard";
-
 
 export default function Main() {
   return (
@@ -14,38 +12,13 @@ export default function Main() {
         <b>tem café e muito código</b>)... Legal, né? Ah, mas esse lugar existe
         e você o encontrou!
       </p>
-      <Button text="Iniciar jornada!" onclick={() => window.location.href = "/login"} />
-      <section className="mt-3 flex flex-col gap-y-3">
-        <h3 className="text-zinc-200">Postagens recentes</h3>
-
-        <PostCard
-          postTime="1 minuto"
-          postTitle="Iniciando no React..."
-          username="neopromic"
-        />
-        <PostCard
-          postTime="1 minuto"
-          postTitle="Iniciando no React..."
-          username="neopromic"
-        />
+      <Button
+        text="Iniciar jornada!"
+        onclick={() => (window.location.href = "/login")}
+      />
+      <p>
         
-      </section>
-      <section className="mt-3 flex flex-col gap-y-3">
-        <h3 className="text-zinc-200">Postagens relevantes</h3>
-
-        <PostCard
-          postTime="1 minuto"
-          postTitle="Criar componentes no React"
-          postDescription="Opa! Quer aprender sobre props e como criar componentes no React? Bom..."
-          username="neopromic"
-        />
-        <PostCard
-          postTime="1 minuto"
-          postTitle="Iniciando no React..."
-          username="neopromic"
-        />
-        
-      </section>
+      </p>
     </div>
   );
 }
