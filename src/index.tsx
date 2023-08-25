@@ -19,7 +19,7 @@ const routes = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <main className="bg-zinc-950 text-zinc-50">
+    <main className="dark:bg-zinc-950 dark:text-zinc-50">
       <RouterProvider router={routes} />
     </main>
   </React.StrictMode>

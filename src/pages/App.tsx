@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <PostCard postTime="1 dia" postTitle="Working with react..." postDescription="Hi, im working finallywith react." username="neopromic"/>
+      <PostCard postTime="1 dia" postTitle="Working with react..." postDescription="Hi, im working finally with react." username="neopromic"/>
     </>
   );
 }

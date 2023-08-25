@@ -16,6 +16,9 @@ dependencies:
     version: 6.15.0(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
+  '@klarr-agency/circum-icons-react':
+    specifier: ^2.0.2
+    version: 2.0.2(react@18.2.0)
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.9(tailwindcss@3.3.3)
@@ -578,6 +581,14 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@klarr-agency/circum-icons-react@2.0.2(react@18.2.0):
+    resolution: {integrity: sha512-J0gQxEWfpjGrsC3cH84wSgS3iebrXxEjuBMuNdzi8VnPR7ZvBgkmFHLxQwZws1DJ2SjEWnxTyv5RKXtKb74p7Q==}
+    peerDependencies:
+      react: ^18.1.0
+    dependencies:
+      react: 18.2.0
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1539,7 +1550,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -1840,7 +1850,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
