@@ -1,7 +1,8 @@
-import HeadingSection from "../HeadingSection";
+import HeroSection from "../HeroSection";
+
 
 export default function Main() {
   return (
-    <HeadingSection />
+    <HeroSection />
   );
 }

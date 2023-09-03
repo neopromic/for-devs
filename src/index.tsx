@@ -6,6 +6,7 @@ import "./styles/global.styles.css";
 // Routes settings
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignIn from "./pages/SignIn/index.tsx";
+import SignUp from "./pages/SignUp/index.tsx";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +16,12 @@ const routes = createBrowserRouter([
     path: "/login",
     element: <SignIn />,
   },
+  {
+    path: "/signup",
+    element: <SignUp />
+  }
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

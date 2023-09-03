@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+import Header from "../../components/Header";
 import "./SignIn.css";
 
 export default function SignIn() {
   return (
+    <>
+    <Header />
     <section>
       <form>
         <div className="form-header">
@@ -22,8 +26,13 @@ export default function SignIn() {
         <button 
         type="submit"
         className="w-full bg-violet-500 hover:bg-violet-800 transition-all delay-200 p-2 text-violet-50 font-medium rounded-md"
-        >Entrar</button>
+        onClick={(e) => (
+          e.preventDefault() 
+          
+        )}>Entrar</button>
+        <span className="text-sm font-light my-4">Novo por aqui? <Link to="/signup">Crie uma conta!</Link></span>
       </form>
     </section>
+    </>
   );
 }

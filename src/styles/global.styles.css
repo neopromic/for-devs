@@ -4,10 +4,14 @@
 
 body {
     @apply h-screen dark:bg-zinc-950;
+    font-family: Inter, sans-serif;
 }
 .outlinedCardButton {
     @apply hover:bg-zinc-800 border border-zinc-700 rounded-md text-sm px-1 text-zinc-50;
 }
 *:focus {
     @apply focus:ring-violet-500 focus:border-violet-500;
+}
+a {
+    @apply text-violet-400 decoration-wavy;
 }
