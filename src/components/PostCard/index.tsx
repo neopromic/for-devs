@@ -7,7 +7,7 @@ interface Props {
 export default function PostCard(props: Props) {
   return (
     <>
-      <section className="min-w-screen m-4 inset-x-1 h-fit flex justify-start items-start flex-col border border-zinc-900 hover:bg-zinc-800 rounded shadow-md p-3 transition-all delay-300">
+      <section className="min-w-screen m-4 inset-x-1 h-fit flex justify-start items-start flex-col border border-zinc-900 hover:bg-zinc-800 rounded shadow-md p-3 transition-all delay-300 cursor-pointer">
         <div>
           {/* Conteúdo header do card */}
           <div className="text-zinc-700">Há {props.postTime} atrás</div>

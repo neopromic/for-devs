@@ -2,7 +2,7 @@ section {
   @apply p-4 grid place-content-center place-items-center h-screen overflow-y-hidden;
 }
 form {
-  @apply bg-zinc-900 p-8 backdrop-filter bg-opacity-60 backdrop-blur-lg rounded-lg shadow-md border border-zinc-800;
+  @apply dark:bg-zinc-900 bg-white p-8 backdrop-filter bg-opacity-60 backdrop-blur-lg rounded-lg shadow-md border dark:border-zinc-800 border-zinc-300;
 }
 h1 {
  @apply font-extrabold text-xl;
@@ -11,8 +11,8 @@ h1 {
   @apply flex flex-col items-center mb-8;
 }
 label {
-  @apply block font-medium text-zinc-300;
+  @apply block font-medium dark:text-zinc-300 text-zinc-900;
 }
 input {
-  @apply w-full bg-zinc-800 mt-1 p-2 outline-none border-none rounded-md;
+  @apply w-full bg-zinc-800 mt-1 p-2 outline-none border-none rounded-md text-white;
 }

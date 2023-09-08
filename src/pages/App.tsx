@@ -1,15 +1,15 @@
-
-import "../styles/App.css"
+import "../styles/App.css";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import PostCard from "../components/PostCard";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <PostCard postTime="1 dia" postTitle="Working with react..." postDescription="Hi, im working finally with react." username="neopromic"/>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <Header />
+        <Main />
+      </ThemeProvider>
     </>
   );
 }
