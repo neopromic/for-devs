@@ -14,8 +14,8 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
 
 #### Back-end Features 🖥️
 
-- [ ] Implementar um banco de dados
-  - [ ] Criar o sistema de login e cadastro
+- [x] Implementar um banco de dados
+  - [x] Criar o sistema de login e cadastro
   - [ ] Criar o sistema de postagens
   - [ ] ...
  
@@ -27,7 +27,7 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
   - [ ]  Criar a visualização dos posts
   - [ ]  Criar o editor para os posts (para criar os posts, necessitamos de um editor de texto)
 - [x] Criar a página de login
-- [ ] Criar a página de registro
+- [x] Criar a página de registro
 - [x] Adicionar o react-router-dom
   ___
 
