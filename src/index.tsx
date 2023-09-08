@@ -7,6 +7,7 @@ import "./styles/global.styles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignIn from "./pages/SignIn/index.tsx";
 import SignUp from "./pages/SignUp/index.tsx";
+import { ThemeProvider } from "./components/ThemeProvider/index.tsx";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -18,15 +19,16 @@ const routes = createBrowserRouter([
   },
   {
     path: "/signup",
-    element: <SignUp />
-  }
+    element: <SignUp />,
+  },
 ]);
-
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <main className="dark:bg-zinc-950 dark:text-zinc-50">
-      <RouterProvider router={routes} />
-    </main>
+    <ThemeProvider>
+      <main className="dark:bg-zinc-950 dark:text-zinc-50">
+        <RouterProvider router={routes} />
+      </main>
+    </ThemeProvider>
   </React.StrictMode>
 );
