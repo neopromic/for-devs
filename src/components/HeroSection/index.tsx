@@ -1,4 +1,4 @@
-import Button from "../Button";
+import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
@@ -13,10 +13,7 @@ export default function HeroSection() {
         <b>tem café e muito código</b>)... Legal, né? Ah, mas esse lugar existe
         e você o encontrou!
       </p>
-      <Button
-        text="Iniciar jornada!"
-        linkTo="/login"
-      />
+      <Button>Iniciar jornada</Button>
     </div>
   );
 }
