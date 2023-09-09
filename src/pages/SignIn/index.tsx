@@ -4,6 +4,7 @@ import "./SignIn.css";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from "../../../firebase"
+import { Button } from "@/components/ui/button";
 
 export default function SignIn() {
   const [email, setEmail] = useState("");
@@ -53,9 +54,12 @@ export default function SignIn() {
           >
             Entrar
           </button>
-          <span className="text-sm">
-            Novo por aqui? <Link to="/signup" className="text-violet-500 font-bold">Crie uma conta!</Link>
-          </span>
+          <Button asChild variant={"link"}>
+            
+            <Link to={"/signup"}>
+              Novo por aqui? Iniciar jornada!
+            </Link>
+          </Button>
         </form>
       </section>
     </>
