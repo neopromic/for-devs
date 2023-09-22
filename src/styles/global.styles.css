@@ -33,6 +33,9 @@
     --ring: 240 10% 3.9%;
  
     --radius: 0.5rem;
+    
+    --defaultViolet: 258 90% 66%;
+    --foregroundViolet: 262 83% 58%;
   }
  
   .dark {
@@ -63,6 +66,7 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
   }
 }
  

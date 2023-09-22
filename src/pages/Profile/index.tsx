@@ -5,11 +5,10 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Profile() {
-  const names = ["neopromic"];
   return (
     <>
       <div className="w-full h-screen overflow-y-clip">
-        <header className="dark:bg-zinc-900 flex items-center sticky p-4 border border-b-border">
+        <header className="dark:bg-zinc-900 flex items-center sticky inset-0 p-4 border border-b-border">
           <div className="flex flex-1 items-center">
             <Button variant={"link"} size={"icon"} asChild>
               <Link to={"/"}>
@@ -27,7 +26,7 @@ export default function Profile() {
             <div><span>Informações do usuário</span>
             <Separator className="my-4" />
             <span>
-              <b>Nome:</b> {names}{" "}
+              Nome:
             </span>
             </div>
             <Separator className="my-4"/>

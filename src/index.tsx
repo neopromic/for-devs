@@ -9,11 +9,11 @@ import SignIn from "./pages/SignIn/index.tsx";
 import SignUp from "./pages/SignUp/index.tsx";
 import { ThemeProvider } from "./components/ThemeProvider/index.tsx";
 import Profile from "./pages/Profile/index.tsx";
-import NotFound from "./components/404NotFound/index.tsx";
+import { Apresentation } from "./pages/Apresentation/index.tsx";
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Apresentation />,
   },
   {
     path: "/login",
@@ -25,11 +25,12 @@ const routes = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <Profile />
+    element: <Profile />,
   },
   {
-    errorElement: <NotFound />
-  }
+    path: "/app",
+    element: <App />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
