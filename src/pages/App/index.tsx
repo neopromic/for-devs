@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "@/styles/App.css";
 import Header from "@/components/ui/Header";
 import Main from "@/components/ui/Main";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
