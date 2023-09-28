@@ -1,18 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 import { Auth, getAuth } from "firebase/auth"
-import dotenv from 'dotenv';
-dotenv.config();
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  databaseURL: process.env.DB_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MSG_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEANSUREMENT_ID
+  apiKey: "AIzaSyDEEW78jqKNMemIwedSItLt0zMv_D6fBcg",
+  authDomain: "creattek-services.firebaseapp.com",
+  databaseURL: "https://creattek-services-default-rtdb.firebaseio.com",
+  projectId: "creattek-services",
+  storageBucket: "creattek-services.appspot.com",
+  messagingSenderId: "10606137426",
+  appId: "1:10606137426:web:17eb7e3ebe72c2fbbacf8b",
+  measurementId: "G-K9QRM2XED5"
 };
 
 // Initialize Firebase
