@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/ui/Header";
 import "./SignIn.css";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth"
@@ -22,7 +22,7 @@ export default function SignIn() {
     <>
       <Header />
       <section>
-        <form onSubmit={signIn}>
+        <form className="max-w-md w-full" onSubmit={signIn}>
           <div className="form-header">
             <img
               src="/assets/logo.png"

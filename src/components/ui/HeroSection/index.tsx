@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
+import { Button } from "../button";
 
 export default function HeroSection() {
   return (
@@ -13,7 +13,7 @@ export default function HeroSection() {
         será acolhido e poderá contribuir na comunidade... <b>Bem-vindo ao forDevs!</b>
       </p>
       <Button variant="defaultViolet" asChild >
-        <Link to="/app">Iniciar jornada!</Link>
+        <Link to="/login">Iniciar jornada!</Link>
         </Button>
     </div>
   );

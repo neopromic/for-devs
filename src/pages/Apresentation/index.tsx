@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
+import Header from "@/components/ui/Header";
+import HeroSection from "@/components/ui/HeroSection";
 
 export function Apresentation() {
   return (

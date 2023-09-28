@@ -1,7 +1,7 @@
 import "../styles/App.css";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import Header from "../components/ui/Header";
+import Main from "../components/ui/Main";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 function App() {
   return (

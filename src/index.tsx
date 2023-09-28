@@ -7,7 +7,7 @@ import "./styles/global.styles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SignIn from "./pages/SignIn/index.tsx";
 import SignUp from "./pages/SignUp/index.tsx";
-import { ThemeProvider } from "./components/ThemeProvider/index.tsx";
+import { ThemeProvider } from "./components/ui/ThemeProvider/index.tsx";
 import Profile from "./pages/Profile/index.tsx";
 import { Apresentation } from "./pages/Apresentation/index.tsx";
 const routes = createBrowserRouter([

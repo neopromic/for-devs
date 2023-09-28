@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../../components/Header";
+import Header from "../../components/ui/Header";
 import "./SignUp.css";
 import { useState } from "react";
 import {auth} from "../../../firebase";
@@ -21,7 +21,7 @@ export default function SignUp() {
     <>
       <Header />
       <div className="h-screen flex items-center justify-center p-4 overflow-hidden">
-        <form onSubmit={signUp}>
+        <form className="max-w-xl" onSubmit={signUp}>
           <div className="form-header">
             <img
               src="/assets/logo.png"
