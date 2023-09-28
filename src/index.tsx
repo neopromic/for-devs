@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./pages/App.tsx";
+import App from "./pages/App";
 import "./styles/global.styles.css";
 
 // Routes settings
@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUp/index.tsx";
 import { ThemeProvider } from "./components/ui/ThemeProvider/index.tsx";
 import Profile from "./pages/Profile/index.tsx";
 import { Apresentation } from "./pages/Apresentation/index.tsx";
+import NotFound from "./components/ui/404NotFound/index.tsx";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,7 @@ const routes = createBrowserRouter([
   {
     path: "/app",
     element: <App />,
+    errorElement: <NotFound />,
   },
 ]);
 
