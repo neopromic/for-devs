@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "./src/*",
+      ],
+      "@api/*": [
+        "./public/api/*",
       ]
     },
     "target": "ES2020",
@@ -31,7 +34,7 @@
   },
   "include": [
     "src"
-  ],
+, "public/*" ],
   "references": [
     {
       "path": "./tsconfig.node.json"
