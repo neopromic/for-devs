@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { ModeToggle } from "../ModeToggle";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../ui/dropdown-menu";
-import { Button } from "../ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "../dropdown-menu";
+import { Button } from "../button";
 import { Menu, User, UserPlusIcon } from "lucide-react";
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
       <div className="flex gap-3 flex-1">
         <Link to="/app">
           <img
-            src="/assets/logo.png"
+            src="/assets/favicon.ico"
             className="w-6 h-6 bg-cover rounded-full"
           />
         </Link>
