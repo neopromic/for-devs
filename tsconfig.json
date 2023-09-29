@@ -6,7 +6,7 @@
         "./src/*",
       ],
       "@api/*": [
-        "./public/api/*",
+        "src/utils/api/*",
       ]
     },
     "target": "ES2020",
