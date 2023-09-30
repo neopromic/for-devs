@@ -1,5 +1,7 @@
-
-# ForDevs, um lugarzinho pra chamar de seu. ☕
+<div>
+  <img src="https://for-devs.vercel.app/assets/favicon.ico" />
+<h1> ForDevs, um lugarzinho pra chamar de seu. ☕</h1>
+</div>
 
 [![dependency - react](https://img.shields.io/badge/dependency-react-7c3aed?logo=react&logoColor=white)](https://www.npmjs.com/package/react)
 
