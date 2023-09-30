@@ -22,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vite-plugin-env-compatible": "^1.1.1"
   },
   "devDependencies": {
     "@klarr-agency/circum-icons-react": "^2.0.2",

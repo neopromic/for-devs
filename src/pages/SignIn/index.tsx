@@ -3,7 +3,7 @@ import Header from "../../components/ui/Header";
 import "./SignIn.css";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth"
-import { auth } from "../../../firebase"
+import { auth } from "@/utils/api/auth/config/index"
 import { Button } from "@/components/ui/button";
 
 export default function SignIn() {

@@ -2,21 +2,22 @@ import { Link } from "react-router-dom";
 import Header from "../../components/ui/Header";
 import "./SignUp.css";
 import { useState } from "react";
-import {auth} from "../../../firebase";
+import { auth } from "@/utils/api/auth/config"
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [username, setUsername] = useState(""); 
+  const [username, setUsername] = useState("");
   const signUp = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      console.log(userCredential)
-    }).catch((error) => console.error(error))
-  }
+      .then((userCredential) => {
+        console.log(userCredential);
+      })
+      .catch((error) => console.error(error));
+  };
   return (
     <>
       <Header />
@@ -24,7 +25,7 @@ export default function SignUp() {
         <form className="max-w-xl" onSubmit={signUp}>
           <div className="form-header">
             <img
-              src="/assets/logo.png"
+              src="/assets/favicon.ico"
               className="w-8 h-8 object-cover rounded-full"
             />
             <h1>Começando no Fordevs</h1>
@@ -63,7 +64,10 @@ export default function SignUp() {
             Iniciar jornada!
           </button>
           <span className="text-sm">
-            Já possui conta? <Link to="/login" className="text-violet-500 font-bold">Entrar agora!</Link>
+            Já possui conta?{" "}
+            <Link to="/login" className="text-violet-500 font-bold">
+              Entrar agora!
+            </Link>
           </span>
         </form>
       </div>
