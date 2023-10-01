@@ -29,10 +29,10 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
    - [x] Implementar a página de registro
 
 4. **Adicionar o react-router-dom**
-   - [ ] Configurar e integrar o react-router-dom para navegação
+   - [x] Configurar e integrar o react-router-dom para navegação
 
 5. **Dark Mode 🌙**
-   - [ ] Implementar um modo escuro para melhorar a experiência do usuário
+   - [x] Implementar um modo escuro para melhorar a experiência do usuário
 
 6. **Notificações Push 🔔**
    - [ ] Adicionar suporte para notificações push em tempo real
@@ -77,22 +77,53 @@ As features serão separas por features **front-end** e **back-end**, o foco pri
    - [ ] Introduzir um sistema de recompensas para incentivar a participação ativa na comunidade
   ___
 
-#### Contribuindo para o forDevs 🚀
+# Contribuindo para o forDevs 🚀
 
-Para contribuir, primeiro clone esse repositório em sua máquina.
+Bem-vindo ao forDevs! Estamos animados por você querer contribuir. Aqui está o guia passo a passo:
+
+## 1. Clone o Repositório
+
+Abra seu terminal e digite o seguinte comando:
+
 ```sh
 git clone https://github.com/neopromic/for-devs.git
 ```
-Navegue até a pasta e rode esse comando para instalar todas as dependências do projeto:
+
+## 2. Instale as Dependências
+
+Vá até a pasta do projeto e instale todas as dependências usando:
+
 ```sh
 pnpm i
 ```
-E, por fim, para rodar o projeto localmente, use:
+
+Certifique-se de ter o [pnpm instalado](link-para-pnpm).
+
+## 3. Execute Localmente
+
+Para iniciar o projeto em sua máquina, utilize:
+
 ```sh
 pnpm run dev
 ```
 
-> **Note que usamos o pnpm para este projeto.**
+O projeto agora deve estar rodando localmente!
 
+> **Nota:** Utilizamos o pnpm como gerenciador de pacotes neste projeto.
+
+## 4. Sua Mágica é Necessária ✨
+
+Agora que o projeto está em execução, mergulhe no código! Resolva problemas, adicione novos recursos e divirta-se experimentando.
+
+## 5. Documentação Detalhada
+
+Para compreender melhor a estrutura do projeto, boas práticas e padrões de codificação, consulte nossa [documentação detalhada](link-para-documentacao).
+
+## 6. Comunique-se e Inspire-se
+
+Participe da nossa comunidade no [discord](link-para-forum) para discussões e ajuda. Busque inspiração em problemas abertos ou adicione os seus.
+
+Esperamos ansiosamente por sua contribuição para tornar o forDevs ainda mais incrível! 🚀
+---
 # Autor:
 [Wesley - Neopromic](https://github.com/neopromic)
