@@ -45,11 +45,7 @@ export function Apresentation() {
             <p className="text-muted-foreground text-center leading-relaxed ">Paragraph</p>
           </div>
         </div>
-        {user ? (
-          <p>user.email</p>
-        ) : (
-          <p>Não encontrado</p>
-        )}
+        
       </div>
     </>
   );
