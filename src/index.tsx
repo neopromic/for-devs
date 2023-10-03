@@ -11,10 +11,12 @@ import { ThemeProvider } from "./components/ui/ThemeProvider/index.tsx";
 import Profile from "./pages/Profile/index.tsx";
 import { Apresentation } from "./pages/Apresentation/index.tsx";
 import NotFound from "./components/ui/404NotFound/index.tsx";
+import { AuthProvider } from "./utils/api/auth/authContextApi/index.tsx";
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Apresentation />,
+    errorElement: <NotFound />,
   },
   {
     path: "/login",
@@ -37,10 +39,12 @@ const routes = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <main>
-        <RouterProvider router={routes} />
-      </main>
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider>
+        <main>
+          <RouterProvider router={routes} />
+        </main>
+      </ThemeProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
