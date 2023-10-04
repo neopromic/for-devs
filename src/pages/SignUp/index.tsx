@@ -21,7 +21,7 @@ export default function SignUp() {
   return (
     <>
       <Header />
-      <div className="h-screen flex items-center justify-center p-4 overflow-hidden">
+      <div className="p-4 overflow-hidden">
         <form className="max-w-xl" onSubmit={signUp}>
           <div className="form-header">
             <img
