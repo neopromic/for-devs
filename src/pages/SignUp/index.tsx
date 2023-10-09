@@ -2,25 +2,37 @@ import { Link } from "react-router-dom";
 import Header from "../../components/ui/Header";
 import "./SignUp.css";
 import { useState } from "react";
-import { auth } from "@/utils/api/auth/config"
+import { auth } from "@/utils/api/auth/config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { Toast } from "@/components/ui/toast"
+import { useToast } from "@/components/ui/use-toast";
 
 export default function SignUp() {
+  const { toast } = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
+
   const signUp = (e) => {
     e.preventDefault();
 
     createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
+      .then(() => {
+        toast({
+          title: "Conta criada com sucesso.",
+        });
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        toast({
+          title: "Erro na criação da conta",
+          description: `Erro: ${error}`,
+        });
+      });
   };
   return (
     <>
       <Header />
+      <Toast  />
       <div className="h-screen flex items-center justify-center p-4 overflow-hidden">
         <form className="max-w-xl" onSubmit={signUp}>
           <div className="form-header">
@@ -59,6 +71,9 @@ export default function SignUp() {
           </div>
           <button
             type="submit"
+            onClick={() => toast({
+              title: "Criando conta..."
+            })}
             className="w-full bg-violet-500 hover:bg-violet-800 transition-all delay-200 p-2 text-violet-50 font-medium rounded-md mb-4"
           >
             Iniciar jornada!
