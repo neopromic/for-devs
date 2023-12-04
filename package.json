@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@klarr-agency/circum-icons-react": "^2.0.2",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20.8.4",
     "@types/react": "^18.2.41",
     "@types/react-dom": "^18.2.17",
